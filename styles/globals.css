@@ -1,0 +1,37 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap"); */
+
+@layer base {
+  html,
+  body {
+    @apply m-0 scroll-smooth p-0;
+  }
+
+  a {
+    @apply text-inherit outline-none;
+  }
+}
+
+.anim {
+  -webkit-animation: fadein 3s linear 1 normal forwards;
+}
+.hero-bg {
+  
+}
+
+.gredient-bg {
+  background: rgb(59,38,140);
+background: radial-gradient(circle, rgba(59,38,140,1) 10%, rgba(44,32,82,1) 100%);
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
